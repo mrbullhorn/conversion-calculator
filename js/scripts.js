@@ -1,6 +1,6 @@
 //business logic
 function convert(faren) {
-  return (faren - 32) * 1.8;
+  return (faren - 32) / 1.8;
 }
 
 
@@ -8,4 +8,4 @@ function convert(faren) {
 
 const faren = prompt("Enter the temperature in farenheit");
 
-window.alert ("The temperature is " + convert(faren) + "\u00B0" + " celcius.");
+window.alert ("The temperature is " + (convert(faren).toFixed(0)) + "\u00B0" + " celcius.");
